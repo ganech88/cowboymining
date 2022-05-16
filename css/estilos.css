@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.grid__container{
+    display: grid;
+    grid-template-columns:3.5fr 1.5fr 2.5fr;
+    grid-template-rows: 50px 0.3fr 1fr 0.89fr  100px ;
+    grid-template-areas: "header header header"
+                        "inicio inicio inicio"
+                        "main1 main1 desc1"
+                        "main2 main2 desc2"
+                        "footer footer footer";
+    gap: 20px;
+}
+.grid__containerRigs{
+    display: grid;
+    grid-template-columns:3.5fr 3.5fr 3.5fr;
+    grid-template-rows: 50px 0.3fr 1fr 100px ;
+    grid-template-areas: "header header header"
+                        "inicio inicio inicio"
+                        "rig1 rig2 rig3"
+                        "footer footer footer";
+    gap: 10px;
+}
+.titulos__rig{
+    grid-area: inicio;
+    justify-self: center;
+    align-self: center;
+}
+.logoprincipal{
+    grid-area: inicio;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li {
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    font-size: large;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: azure;
+}
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
+    border: 3px solid orange;
+    background-color: #d4c8ac;
+}
+body{
+    background-color: #d4c8ac;
+}
+.header__titulo{
+    margin-top: 3px;
+    margin-left: -10px;
+    color:whitesmoke;
+}
+.header__logo{
+    width: 3%;
+}
+.header__items{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+   /*  font-family: 'Times New Roman', Times, serif;  */ 
+}
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.3);
+    background-color: chocolate;
+
+}
+.btn--logoprincipal {
+    margin-left: 33%;
+}
+.inicio{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 70%;
+}
+.inicio__grid1{
+    grid-area: main1;    
+}
+.inicio__grid2{
+    grid-area: main2;
+}
+.titulos{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.titulos--acercadenosotros {
+    margin-left: 0%;
+    margin: 2%;
+}
+.descripcion{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(27, 48, 88);
+}
+.descripcion--acercadenosotros{
+    width: 60%;
+    margin: 2%;
+}
+.descripcion__grid1{
+    grid-area: desc1;
+    justify-content: left;
+    margin-top: 25%;
+}
+.descripcion__grid2{
+    grid-area: desc2;
+    justify-content: left;
+    margin-top: 25%;
+    }
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: larger;
+    margin-top: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+     Arial, sans-serif;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+.acercadenostros{
+    display: flex;
+    flex-direction: column; 
+}
+.acercadenosotros__profesional{
+    display: flex;
+    flex-direction: row;
+    color: cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 2%;
+}
+.acercadenosotros__titulo{
+    margin-left: 2%;
+    margin-top: -2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rigs{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    text-align:start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid__rig1{
+    grid-area: rig1;
+}
+.grid__rig2{
+    grid-area: rig2;
+}
+.grid__rig1{
+    grid-area: rig3;
+}
+.rigs__placas{
+    width: 380px;
+    border: 10px solid black;
+}
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .grid__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+    "header header"
+    "inicio inicio"
+    "main1 main1"
+    "main2 main2" 
+    "footer footer"
+    ;
+    }
+    .descripcion{
+        display:none;
+    }
+    .grid__containerRigs{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 3fr;
+        grid-template-areas: "header header"
+                            "inicio inicio"
+                            "rig1 rig2"
+                            "rig3 rig3"
+                            "footer footer";
+    }
+    .header__items {
+display: flex;
+flex-direction: column;
+justify-content: center;
+    }
+    .grid__rig1{
+        justify-self: center;
+        align-self: center;
+    }
+    .grid__rig2{
+        justify-self: center;
+        align-self: center;
+    }
+    .grid__rig3{
+        justify-self: center;
+        align-self: center;
+    }
+    .inicio__grid1{
+        justify-self: center;
+        align-self: center;
+    }
+    .inicio__grid2{
+        justify-self: center;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid__container {
+         grid-template-columns: 2fr;
+        grid-template-areas: 
+        "header"
+        "inicio"
+        "main1"
+        "main2"
+        "footer";
+    }
+    .grid__containerRigs {
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        "header"
+        "inicio"
+        "rig1"
+        "rig2"
+        "rig3"
+        "footer";
+    }
+    .grid__rig1{
+        justify-self: center;
+        align-self: center;
+    }
+    .grid__rig2{
+        justify-self: center;
+        align-self: center;
+    }
+    .grid__rig3{
+        justify-self: center;
+        align-self: center;
+    }
+    .inicio__grid1{
+        justify-self: center;
+        align-self: center;
+    }
+    .inicio__grid2{
+        justify-self: center;
+        align-self: center;
+    }
+    .header__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .descripcion{
+        display:none;
+    }        
+}
+        
