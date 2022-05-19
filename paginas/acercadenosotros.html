@@ -8,57 +8,90 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../recursos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../recursos/favicon-16x16.png">
     <link rel="manifest" href="../recursos/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>CowboyMining - Mineria de criptomonedas</title>
 </head>
 <body>
-    <header class="header"> <!-- Aca comienza el HEADER -->
-        <img class="header__logo" src="../recursos/android-chrome-192x192.png" >
-        <h1 class="header__titulo">owboyMining</h1>   
-        <nav class="header__menu"> <!-- Aca empieza el MENU -->
-            <ul class="header__items">
-                <a href="../index.html"><li>Inicio</li></a>
-                <a href="rigs.html"><li>Rigs</li></a>
-                <a href="acercadenosotros.html"><li>Acerca de nosotros</li></a>
-                <a href="contacto.html"><li>Contacto</li></a>
-                <a href="ubicacion.html"><li>Ubicacion</li></a>
-            </ul>
-        </nav><!-- Aca termina el MENU -->
-    </header><!-- Acca termina el HEADER -->
-    <main> <!-- Aca comienza el MAIN -->
-        <section class="acercadenosotros">
-            <div>
-                <h1 class="titulos titulos--acercadenosotros">¿Quienes Somos?</h1>
-                <p class="descripcion descripcion--acercadenosotros">Somos un equipo de profesionales IT, que nos dedicamos a la mineria de criptomonedas, brindamos asesoramiento tecnico como asi tambien, armamos rigs de mineria listos para que los conectes y ya estes minando la criptomoneda que prefieras.</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/android-chrome-192x192.png" alt="..." height="36">
+                </a>
+                <button   button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rigs.html">Rigs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="acercadenosotros.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="acercadenosotros__profesional">
-                <img src="../recursos/userit.png" width="380">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et saepe quo repellendus facere, ipsam maxime. Ut maiores neque, provident dolorem temporibus, ipsam quo repellendus rem enim sapiente quae? Labore?
-                Doloremque corrupti officia soluta nobis? Animi voluptas, error repellat eaque dolorum veniam et ducimus a suscipit excepturi debitis? Cumque dolorem quibusdam quisquam illum obcaecati dicta qui deserunt omnis velit fugit?
-                Tempora, asperiores error. Libero cumque vel deserunt doloremque veniam necessitatibus modi ad rem laudantium quibusdam natus maxime, deleniti nemo amet sequi nobis itaque optio animi maiores. Ipsa libero sed minus.
-                Enim dolor iste facere natus odit suscipit harum minus error placeat perspiciatis, sequi, itaque ab ducimus, quam aspernatur adipisci tempora. Eveniet dicta quasi natus nihil aperiam ipsum esse labore minus?
-                Similique fuga eveniet doloremque reiciendis optio, minima vitae eos vero, magni beatae aliquam laboriosam, nulla et saepe delectus architecto officiis atque. Voluptas repellat molestias cupiditate ad commodi? Ipsam, iste pariatur!</p>
+        </nav>
+</header>
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 class="titulos titulos--acercadenosotros">¿Quienes Somos?</h1>
+            <p class="descripcion descripcion--acercadenosotros">Somos un equipo de profesionales IT, que nos dedicamos a la mineria de criptomonedas, brindamos asesoramiento tecnico como asi tambien, armamos rigs de mineria listos para que los conectes y ya estes minando la criptomoneda que prefieras.</p><br>
+    </div>
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="acercadenosotros__titulo">Profesional IT</h3>
+                <img src="../recursos/userit.png" width="380"><br>
             </div>
-            <h3 class="acercadenosotros__titulo">Profesional IT</h3>
-            <div class="acercadenosotros__profesional">
-                <img src="../recursos/userit.png" width="380">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio amet esse assumenda maiores facilis quos rem animi, debitis nam omnis odit quas ratione hic sed aliquid, voluptatum ipsum, tenetur reiciendis.
-                Iusto a numquam illo doloremque, ex libero, accusantium, sapiente consequuntur expedita porro asperiores neque eligendi eum nobis! Iure perspiciatis sunt dicta tenetur voluptatem! Cum expedita dignissimos vitae voluptates alias blanditiis.
-                Iste temporibus nobis tenetur, consequatur nostrum optio et laborum soluta quae quos, ab labore exercitationem tempora, eum laudantium doloremque debitis repellat nulla possimus officia accusamus distinctio ut! Suscipit, a accusamus.
-                Obcaecati eius reprehenderit excepturi, corrupti ad repellat labore facere impedit est fuga minus animi aspernatur enim quae adipisci at quidem debitis perspiciatis temporibus facilis ab ullam ut. Odit, animi ullam!
-                Distinctio, facilis aliquam illum doloremque cupiditate repudiandae. Fuga sequi ducimus facilis quam soluta voluptatibus. Aperiam dolorum esse inventore distinctio quasi pariatur unde, quam, animi mollitia quibusdam accusantium similique ducimus possimus!</p>
+            <div class="col-sm-4 acercadenosotros__profesional"><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati consectetur nesciunt eum doloremque ipsa inventore cupiditate voluptas reiciendis quam earum nulla tempora a repudiandae, enim ratione ab sequi incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis soluta at, quisquam voluptate velit amet illo, nihil dolore hic consequuntur fugiat sequi aliquam nisi, delectus quos! Molestiae, molestias minus.</p>
             </div>
-            <h3 class="acercadenosotros__titulo">Profesional IT</h3>
+        </div>
+    </div>
+    <div id="about" class="container-fluid"><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="acercadenosotros__titulo">Profesional IT 2</h3>
+                <img src="../recursos/userit.png" width="380"><br>
+        </div>
+        <div class="col-sm-4 acercadenosotros__profesional"><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati consectetur nesciunt eum doloremque ipsa inventore cupiditate voluptas reiciendis quam earum nulla tempora a repudiandae, enim ratione ab sequi incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis soluta at, quisquam voluptate velit amet illo, nihil dolore hic consequuntur fugiat sequi aliquam nisi, delectus quos! Molestiae, molestias minus.</p>
+        </div>
+        </div>
+    </div>
         </section>
     </main>
-    <div class="footer__redes">
-        <a href="https://www.facebook.com/" target="blank"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
-        <a href="https://www.instagram.com/"target="blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
-        <a href="https://twitter.com/"target="blank"> <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png"/></a>
-        <a href="https://web.whatsapp.com/"target="blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>
-        <span>Todos los derechos reservados</span>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button">
+                    <i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button">
+                    <i class="fab fa-instagram"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Todos los derechos reservados
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4edc9dcc3e.js" crossorigin="anonymous"></script>
 </body>
 
 
