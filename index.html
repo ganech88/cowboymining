@@ -7,47 +7,125 @@
     <link rel="apple-touch-icon" sizes="180x180" href="recursos/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="recursos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="recursos/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="manifest" href="recursos/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+
     <title>CowboyMining - Mineria de criptomonedas</title>
 </head>
-<body class="grid__container">
-    <header> <!-- Aca comienza el HEADER -->
-        <img class="header__logo" src="recursos/android-chrome-192x192.png" >  
-        <nav class="header__menu"> <!-- Aca empieza el MENU -->
-            <ul class="header__items">
-                <a href="index.html"><li>Inicio</li></a>
-                <a href="paginas/rigs.html"><li>Rigs</li></a>
-                <a href="paginas/acercadenosotros.html"><li>Acerca de nosotros</li></a>
-                <a href="paginas/contacto.html"><li>Contacto</li></a>
-                <a href="paginas/ubicacion.html"><li>Ubicacion</li></a>
-            </ul>
-        </nav><!-- Aca termina el MENU -->
-    </header><!-- Aca termina el HEADER -->
-    <div class="logoprincipal">
-        <img src="recursos/Logo CowboyMining_color.png" width="580">
-        <a href="paginas/rigs.html"><button class="btn btn--logoprincipal btn__animacion ">iCompra tu equipo!</button></a>
-    </div>       
-    <div class="inicio inicio__grid1">
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="recursos/android-chrome-192x192.png" alt="..." height="36">
+                </a>
+                <button   button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="paginas/rigs.html">Rigs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="paginas/acercadenosotros.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="paginas/ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+<div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="recursos/Logo CowboyMining_color.png" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-sm-block">
+            <a href="paginas/rigs.html"><button class="btn btn__animacion btn__comprar">iCompra tu equipo!</button></a>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="recursos/rig3g.jpg" class="d-block w-100" height="50%" alt="Slide 2">
+        <div class="carousel-caption d-none d-sm-block">
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="recursos/rig4g.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-sm-block">
+        </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </a>
+</div>
+<br><br>
+<div id="about" class="container-fluid">
+    <div class="row">
+    <div class="col-sm-8">
+        <iframe width="70%" height="100%" src="https://www.youtube.com/embed/gisEllEwoPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+    </div>
+    <div class="col-sm-4">
         <h2 class=titulos>¿Que es la mineria de criptomonedas?</h2>
-        <iframe class="inicio__iframe" width="100%" height="315" src="https://www.youtube.com/embed/gisEllEwoPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="descripcion">La minería de criptomonedas es el proceso en el que los mineros utilizan la potencia informática (hash), para procesar transacciones y obtener recompensas, en este caso criptomonedas. Dicho de otra forma, es el proceso de agregar nuevos registros de transacciones como bloques a la cadena de bloques</p>
     </div>
-    <p class="descripcion descripcion__grid1 ">La minería de criptomonedas es el proceso en el que los mineros utilizan la potencia informática (hash), para procesar transacciones y obtener recompensas, en este caso criptomonedas. Dicho de otra forma, es el proceso de agregar nuevos registros de transacciones como bloques a la cadena de bloques</p>
-    <div class="inicio inicio__grid2">
-        <h2 class=titulos>¿Como se ve una granja de mineria?</h2>
-        <iframe class="iframe" width="100%" height="315" src="https://www.youtube.com/embed/0NxG_kzGOrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="descripcion  descripcion__grid2">En el siguiente video van a poder observar como se ve una granja de mineria, para que tambien tengan una idea de los espacios que se requieren, y consideraciones del lugar que son necesarios para poner varios equipos en funcionamiento </p>
-    <footer> <!-- Aca empieza el FOOTER-->
-            <a href="https://www.facebook.com/" target="blank"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
-            <a href="https://www.instagram.com/"target="blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
-            <a href="https://twitter.com/"target="blank"> <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png"/></a>
-            <a href="https://web.whatsapp.com/"target="blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/></a>
-            <span>Todos los derechos reservados</span>
-    </footer> <!-- ACA TERMINA el FOOTER -->
+</div>
+<br>
+<div id="about" class="container-fluid">
+    <div class="row">
+    <div class="col-sm-8">
+        <iframe class="iframe" width="70%" height="100%" src="https://www.youtube.com/embed/0NxG_kzGOrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+    </div>
+    <div class="col-sm-4">
+        <h2 class=titulos>¿Como se ve un rig de mineria?</h2>
+    <p class="descripcion">En el siguiente video van a poder observar como se ve una granja de mineria, para que tambien tengan una idea de los espacios que se requieren, y consideraciones del lugar que son necesarios para poner varios equipos en funcionamiento </p>
+    </div>
+    </div>
+</div>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button">
+                    <i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button">
+                    <i class="fab fa-instagram"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Todos los derechos reservados
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4edc9dcc3e.js" crossorigin="anonymous"></script>
 </body>
 </html>

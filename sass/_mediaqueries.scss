@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    .header__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .maprouter {
+        width: 30%;
+    }
+    .acercadenosotros__profesional {
+        display: none;
+    } 
+}
+@media screen and (max-width: 600px) {
+    .acercadenosotros__profesional {
+        display: none;
+    }    
+}

@@ -1,0 +1,158 @@
+@import 'header';
+@import 'footer';
+@import 'mediaqueries';
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.titulos__rig{
+    grid-area: inicio;
+    justify-self: center;
+    align-self: center;
+}
+.logoprincipal{
+    grid-area: inicio;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li {
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    font-size: large;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: azure;
+}
+body{
+    background-color: #d4c8ac;
+}
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    &__comprar:hover {
+    transform: scale(1.3);
+    background-color: chocolate;
+    }
+    &__animacion {
+    animation-duration: 5s;
+    animation-name: animacion_boton;
+    animation-iteration-count: infinite;
+    }
+}
+button:hover{
+    transform: scale(1.3);
+    background-color: chocolate;
+}
+@keyframes animacion_boton {
+    0%{
+        width: 40%;
+    }
+    40%{
+        width: 60%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.inicio{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 70%;
+    &__grid1{
+        grid-area: main1;    
+    }
+    &__grid2{
+        grid-area: main2;
+    }
+}
+.titulos{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    &__acercadenosotros {
+        margin-left: 0%;
+        margin: 2%;
+    }
+}
+.descripcion{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(27, 48, 88);
+    &__grid1{
+    grid-area: desc1;
+    justify-content: left;
+    margin-top: 25%;
+    }
+    &__grid2{
+    grid-area: desc2;
+    justify-content: left;
+    margin-top: 25%;
+    }
+    &__acercadenosotros{
+    width: 60%;
+    margin: 2%;
+    }
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+.acercadenostros{
+    display: flex;
+    flex-direction: column;
+    &__profesional{
+        display: flex;
+        flex-direction: row;
+        color: cadetblue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        margin: 2%;
+    }
+    &__titulo{
+        margin-left: 2%;
+        margin-top: -2%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+.rigs{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    text-align:start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    &__placas{
+        width: 380px;
+        border: 10px solid black;
+    }
+}
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+}

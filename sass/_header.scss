@@ -1,0 +1,25 @@
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
+    border: 3px solid orange;
+    background-color: #d4c8ac;
+    &__titulo{
+        margin-top: 3px;
+        margin-left: -10px;
+        color:whitesmoke;
+    }
+    &__logo{
+    width: 3%;
+    }
+    &__items{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+}
+

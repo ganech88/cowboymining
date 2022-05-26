@@ -2,27 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-.grid__container{
-    display: grid;
-    grid-template-columns:3.5fr 1.5fr 2.5fr;
-    grid-template-rows: 50px 0.3fr 1fr 0.89fr  100px ;
-    grid-template-areas: "header header header"
-                        "inicio inicio inicio"
-                        "main1 main1 desc1"
-                        "main2 main2 desc2"
-                        "footer footer footer";
-    gap: 20px;
-}
-.grid__containerRigs{
-    display: grid;
-    grid-template-columns:3.5fr 3.5fr 3.5fr;
-    grid-template-rows: 50px 0.3fr 1fr 100px ;
-    grid-template-areas: "header header header"
-                        "inicio inicio inicio"
-                        "rig1 rig2 rig3"
-                        "footer footer footer";
-    gap: 10px;
-}
+
 .titulos__rig{
     grid-area: inicio;
     justify-self: center;
@@ -87,8 +67,9 @@ body{
     cursor: pointer;
 }
 
-.btn--logoprincipal {
-    margin-left: 33%;
+.btn__comprar:hover {
+    transform: scale(1.3);
+    background-color: chocolate;
 }
 button:hover{
     transform: scale(1.3);
@@ -207,15 +188,7 @@ input, textarea {
     text-align:start;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.grid__rig1{
-    grid-area: rig1;
-}
-.grid__rig2{
-    grid-area: rig2;
-}
-.grid__rig1{
-    grid-area: rig3;
-}
+
 .rigs__placas{
     width: 380px;
     border: 10px solid black;
@@ -225,102 +198,24 @@ input, textarea {
     flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-    .grid__container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-    "header header"
-    "inicio inicio"
-    "main1 main1"
-    "main2 main2" 
-    "footer footer"
-    ;
-    }
-    .descripcion{
-        display:none;
-    }
-    .grid__containerRigs{
-        grid-template-columns:repeat(2, 1fr);
-        grid-template-rows: 3fr;
-        grid-template-areas: "header header"
-                            "inicio inicio"
-                            "rig1 rig2"
-                            "rig3 rig3"
-                            "footer footer";
-    }
+
     .header__items {
 display: flex;
 flex-direction: column;
 justify-content: center;
-    }
-    .grid__rig1{
-        justify-self: center;
-        align-self: center;
-    }
-    .grid__rig2{
-        justify-self: center;
-        align-self: center;
-    }
-    .grid__rig3{
-        justify-self: center;
-        align-self: center;
-    }
-    .inicio__grid1{
-        justify-self: center;
-        align-self: center;
-    }
-    .inicio__grid2{
-        justify-self: center;
-        align-self: center;
-    }
+
+}
+.maprouter {
+
+    width: 30%;
+}
+.acercadenosotros__profesional {
+    display: none;
+    }  
 }
 @media screen and (max-width: 600px) {
-    .grid__container {
-         grid-template-columns: 2fr;
-        grid-template-areas: 
-        "header"
-        "inicio"
-        "main1"
-        "main2"
-        "footer";
-    }
-    .grid__containerRigs {
-        grid-template-columns: 2fr;
-        grid-template-areas: 
-        "header"
-        "inicio"
-        "rig1"
-        "rig2"
-        "rig3"
-        "footer";
-    }
-    .grid__rig1{
-        justify-self: center;
-        align-self: center;
-    }
-    .grid__rig2{
-        justify-self: center;
-        align-self: center;
-    }
-    .grid__rig3{
-        justify-self: center;
-        align-self: center;
-    }
-    .inicio__grid1{
-        justify-self: center;
-        align-self: center;
-    }
-    .inicio__grid2{
-        justify-self: center;
-        align-self: center;
-    }
-    .header__items {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .descripcion{
-        display:none;
-    }        
+.acercadenosotros__profesional {
+display: none;
+}    
 }
         

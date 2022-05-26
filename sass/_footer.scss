@@ -1,0 +1,12 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: larger;
+    margin-top: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+    Arial, sans-serif;
+}
